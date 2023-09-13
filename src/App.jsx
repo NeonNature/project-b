@@ -9,7 +9,7 @@ function App() {
 
     return (
         <>
-            <Navbar setIsFeed={setIsFeed} />
+            <Navbar setIsFeed={setIsFeed} isFeed={isFeed} />
             {isFeed ? <Page_Feed /> : <Page_MusicPlayer />}
         </>
     );

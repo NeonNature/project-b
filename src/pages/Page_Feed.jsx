@@ -4,7 +4,7 @@ import "../styles/page_feed.css";
 
 const Page_Feed = () => {
     const [posts, setPosts] = useState([]);
-    const [filter, setFilter] = useState(0);
+    const [filter, setFilter] = useState(-1);
     const [sort, setSort] = useState("");
 
     console.log(filter);
@@ -36,7 +36,7 @@ const Page_Feed = () => {
                 break;
         }
 
-        if (filter !== 0) {
+        if (filter >= 0) {
             return rawData.filter((i) => i.userId == filter);
         }
 
@@ -86,7 +86,7 @@ const Page_Feed = () => {
                         value={filter}
                         onChange={(e) => setFilter(e.target.value)}
                     >
-                        <option value={0}>None</option>
+                        <option value={-1}>None</option>
                         {optionList}
                     </select>
                 </div>
