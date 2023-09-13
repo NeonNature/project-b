@@ -17,3 +17,9 @@
 .post-body {
     margin-top: 5px;
 }
+
+.post-user {
+    text-align: right;
+    font-style: italic;
+    margin: 0;
+}

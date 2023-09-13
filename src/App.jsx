@@ -5,7 +5,7 @@ import Page_MusicPlayer from "./pages/Page_MusicPlayer";
 import Navbar from "./components/Navbar";
 
 function App() {
-    const [isFeed, setIsFeed] = useState(false);
+    const [isFeed, setIsFeed] = useState(true);
 
     return (
         <>
