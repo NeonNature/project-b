@@ -4,6 +4,7 @@ import "../styles/page_feed.css";
 
 const Page_Feed = () => {
     const [posts, setPosts] = useState([]);
+    const [filter, setFilter] = useState(0);
 
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/posts")
@@ -24,7 +25,27 @@ const Page_Feed = () => {
         [posts]
     );
 
-    return <div id="feed-container">{postList}</div>;
+    return (
+        <div id="feed-container">
+            <div id="feed-action-bar">
+                <div className="feed-action">
+                    <span>Sort: </span>
+                    <button onClick={() => {}}> Ascending </button>
+                </div>
+                <div className="feed-action">
+                    <span>Filter: </span>
+                    <select
+                        value={filter}
+                        onChange={(e) => setFilter(e.target.value)}
+                    >
+                        <option value={0}>None</option>
+                        <option value={1}>UserID 1</option>
+                    </select>
+                </div>
+            </div>
+            {postList}
+        </div>
+    );
 };
 
 export default Page_Feed;

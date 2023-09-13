@@ -4,3 +4,13 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+#feed-action-bar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.feed-action {
+    width: 50%;
+}
