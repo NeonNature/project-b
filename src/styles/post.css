@@ -1,0 +1,18 @@
+.post-container {
+    flex-basis: 50%;
+    flex-grow: 1;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 16px;
+    display: inline-block;
+}
+
+.post-title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.post-body {
+    margin-top: 5px;
+}
