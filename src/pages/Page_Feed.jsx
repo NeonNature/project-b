@@ -7,8 +7,6 @@ const Page_Feed = () => {
     const [filter, setFilter] = useState(-1);
     const [sort, setSort] = useState("");
 
-    console.log(filter);
-
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/posts")
             .then((response) => response.json())
