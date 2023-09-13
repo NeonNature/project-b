@@ -43,7 +43,7 @@ const Page_Feed = () => {
                     </select>
                 </div>
             </div>
-            {postList}
+            <div id="feed-list">{postList}</div>
         </div>
     );
 };

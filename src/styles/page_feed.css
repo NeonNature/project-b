@@ -14,3 +14,8 @@
 .feed-action {
     width: 50%;
 }
+
+#feed-list {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+}
